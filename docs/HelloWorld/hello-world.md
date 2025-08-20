@@ -6,6 +6,8 @@ tag:
 categories:
   - HelloWorld
 date: 2024-11-25 14:41:00
+comments: true
+template: main.html
 ---
 Hello World！程序实在是过于经典了，对于相当多的计算机语言，我们几乎总有办法使其显示一个Hello World！这里介绍了一些显示Hello World!的方式。这篇文章来源与我之前写的一些小东西，重新看后发现自己有许多错漏之处，以后需要进行进一步完善。
 
@@ -556,7 +558,7 @@ PlantUML是一个开源项目，支持快速绘制多种图形，最棒的是可
 @enduml
 ```
 #### 显示效果
-```plantuml
+```puml
 @startuml
 (*) --> "Hello World!"
 --> (*)

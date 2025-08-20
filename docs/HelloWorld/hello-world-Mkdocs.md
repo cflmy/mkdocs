@@ -4,6 +4,8 @@ categories:
   - HelloWorld
 tag: [Hello World!]
 date: 2025-08-20 16:33:52
+comments: true
+template: main.html
 ---
 # Welcome to MkDocs
 

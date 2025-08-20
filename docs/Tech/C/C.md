@@ -1,5 +1,5 @@
 ---
-title: C语言环境配置（最直接）
+title: C语言环境配置
 date: 2025-04-11 16:00:00
 categories:
   - Technology
