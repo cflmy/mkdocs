@@ -7,9 +7,9 @@ template: main.html
 ---
 ## 博客索引
 <div class="grid cards" markdown>
-* [HelloWorld](/HelloWorld)
-* [项目文档](/CFLMY)
-* [技术分享](/Tech)
+* [HelloWorld](HelloWorld/index.md)
+* [项目文档](CFLMY/index.md)
+* [技术分享](Tech/index.md)
 </div>
 
 ## 本站镜像

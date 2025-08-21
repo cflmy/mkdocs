@@ -10,6 +10,8 @@ tags:
 categories:
   - Technology
   - PlantUml
+comments: true
+template: main.html
 ---
 ## 前言
 PlantUml作为一种脚本编码的语言，很多图像都可以绘制，思维导图也在其中。
@@ -24,7 +26,7 @@ PlantUml作为一种脚本编码的语言，很多图像都可以绘制，思维
 ~~~
 展示的效果如下：
 
-```plantuml
+```puml
 @startmindmap
 * Hello
 ** World
@@ -54,7 +56,7 @@ PlantUml使用以下方式标识思维导图：
 @endmindmap
 ~~~
 显示效果如下
-```plantuml
+```puml
 @startmindmap
 * Root1
 ** Branch1
@@ -82,7 +84,7 @@ PlantUml使用以下方式标识思维导图：
 @endmindmap
 ~~~
 显示效果
-```plantuml
+```puml
 @startmindmap
 * Root
 ++ LeftBranch1
@@ -112,7 +114,7 @@ top to bottom direction
 @endmindmap
 ~~~
 显示效果如下：
-```plantuml
+```puml
 @startmindmap
 top to bottom direction
 * Root
@@ -138,7 +140,7 @@ top to bottom direction
 @endmindmap 
 ~~~
 可以简单的理解为使用缩进代替了原来的多个'*'号。上述代码展示的效果如下所示：
-```plantuml
+```puml
 @startmindmap
 * Root 
   * Branch1 
@@ -158,7 +160,7 @@ top to bottom direction
 @endmindmap
 ~~~
 显示效果如下所示
-```plantuml
+```puml
 @startmindmap
 * <math> \int_0^1 f(x)dx </math>
 ** <math> \frac{\partial f}{\partial x} </math>
@@ -172,7 +174,7 @@ top to bottom direction
 @endmindmap
 ~~~
 显示效果如下所示
-```plantuml
+```puml
 @startmindmap
 * <latex> \int_0^1 f(x)dx </latex>
 ** <latex> \frac{\partial f}{\partial x} </latex>
@@ -194,7 +196,7 @@ top to bottom direction
 @endmindmap 
 ~~~
 展示的效果如下所示：
-```plantuml
+```puml
 @startmindmap 
 *_ Root
 **_ Branch1
@@ -216,7 +218,7 @@ aaaaaaaaaaaaaaaaaa
 @endmindmap
 ~~~
 显示效果如下所示：
-```plantuml
+```puml
 @startmindmap
 * Root
 **:a
@@ -241,7 +243,7 @@ aaaaaaaaaaaaaaaaaa
 @endmindmap
 ~~~
 显示效果如下所示：
-```plantuml
+```puml
 @startmindmap
 * Root
 **[#Orange] orange
@@ -275,7 +277,7 @@ mindmapDiagram {
 @endmindmap
 ~~~
 展示的效果如下：
-```plantuml
+```puml
 @startmindmap
 <style>
 mindmapDiagram {
@@ -300,8 +302,3 @@ mindmapDiagram {
 
 ## 后记
 真正仔细了解了PlantUml思维导图的画法之后，我才意识到对于这个工具我掌握的还是很浅薄，后续可以期待继续开发以下更多有意思的用法。
-
----
-### 同系列
-[PlantUml-活动图基础](https://blog.cflmy.cn/2024/11/15/Technology/PlantUml/PlantUml-%E6%B4%BB%E5%8A%A8%E5%9B%BE-%E5%9F%BA%E7%A1%80/)
-[PlantUml-思维导图基础](https://blog.cflmy.cn/2024/11/18/Technology/PlantUml/PlantUml-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E5%9F%BA%E7%A1%80/)

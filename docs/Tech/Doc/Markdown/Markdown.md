@@ -7,6 +7,8 @@ tag:
   - Markdown
   - 知识记录
 date: 2025-03-19 10:30:00
+comments: true
+template: main.html
 ---
 
 ## 前言
@@ -285,11 +287,11 @@ code
 此外，插入图片和插入链接十分类似，使用方式为`![显示失败出现的文字](图片地址)`
 例如下列代码：
 ```markdown
-![](../../../img/mascot.webp)
+![](img/mascot.webp)
 ```
 
 显示效果为：
-![](../../../img/mascot.webp)
+![](img/mascot.webp)
 
 ### 分割线
 使用三个`-`可以制造一条分割线。
@@ -304,9 +306,3 @@ code
 
 ## 后记
 以上就是Markdown的基本语法，后续发现有遗漏的或许会再行补充。
-
----
-### 同系列：
-[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdown/Markdown/)
-[Latex基础语法](https://blog.cflmy.cn/2025/05/08/Technology/Latex/Latex/)
-[Typst-基础使用](https://blog.cflmy.cn/2025/05/12/Technology/Typst/Typst-基础使用/)

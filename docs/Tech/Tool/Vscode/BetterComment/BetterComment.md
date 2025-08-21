@@ -8,18 +8,20 @@ tag:
   - 效率提升
   - 生产力工具
 date: 2024-11-13 16:29:49
+comments: true
+template: main.html
 ---
 ## 前言
 Vscode中有许多非常好用的插件，能够提升程序员的写作效率。其中Better Comments作为一款注释增强类型的插件，有助于程序员养成良好的代码风格。并且该软件可以通过配置一些新的选项实现更多功能，这里分享一下我的配置。
 
 ## 下载安装
 Vscode插件商店搜索Better Comments,下载安装第一个即可。
-![](../img/BetterComments/1.png)
+![](img/1.webp)
 
 ## 使用
 ### 初始配置
 作者初始提供了几种默认的tag，使用图例如下：
-![](../img/BetterComments/2.png)
+![](img/2.webp)
 
 ### 进阶配置
 打开settings.json，找到如下处
@@ -117,7 +119,7 @@ Vscode插件商店搜索Better Comments,下载安装第一个即可。
 ~~~
 注意{}后的逗号，如果是在末尾就不要加，不在末尾请注意添加，后文也是类似的
 ##### 效果展示
-![](../img/BetterComments/3.png)
+![](img/3.webp)
 
 #### 添加对于结构的注释信息
 ##### 配置文件
@@ -287,7 +289,7 @@ Vscode插件商店搜索Better Comments,下载安装第一个即可。
     }
 ~~~
 ##### 效果展示
-![](../img/BetterComments/4.png)
+![](img/4.webp)
 
 #### 增加对于新的标签的支持
 ##### 配置文件
@@ -368,7 +370,7 @@ Vscode插件商店搜索Better Comments,下载安装第一个即可。
 ~~~
 需要注意的是，新定义的Todo和之前的有所重复，生效规则是在前的生效，这里是出于统一风格的原因进行了统一。
 ##### 效果展示
-![](../img/BetterComments/5.png)
+![](img/5.webp)
 
 #### 增加对于一些数字的支持（这里使用了一些莫兰迪色）
 ##### 配置文件
@@ -457,15 +459,9 @@ Vscode插件商店搜索Better Comments,下载安装第一个即可。
     }
 ~~~
 ##### 效果展示
-![](../img/BetterComments/6.png)
+![](img/6.webp)
 
 这里比较特殊的一点在于如果是多位数，是自动按照最后一位进行色彩的改变的，因此如果你对注释进行编号，每条注释之间的颜色都会发生改变，不会出现111，112，113……之间颜色一直是单调不变的情况
 
 ## 后记
 总体而言，Better Comments这个插件使用起来还是很棒的，主要原因是这个插件支持的文件类型相对较多。此外还可以在配置中打开highlight PlainText（这个配置是默认关闭的）这样的选择为这个插件提供了更多可能。
-
----
-### 同系列
-[Better Comments-Vscode插件配置](https://blog.cflmy.cn/2024/11/13/Technology/Vscode/BetterComment/)
-[MarkDown Preview Enhanced自定义样式配置-Vscode插件配置](https://blog.cflmy.cn/2025/03/16/Technology/Vscode/MarkDownPrview/)
-[自定义Vscode界面](https://blog.cflmy.cn/2025/04/25/Technology/Vscode/CustomCssandJsloader/)

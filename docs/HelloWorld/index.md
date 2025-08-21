@@ -6,7 +6,7 @@ comments: true
 template: main.html
 ---
 <div class="grid cards" markdown>
-* [一切的开始：Hello World！](hello-world)
-* [Hello World-Hexo](hello-world-Hexo)
-* [Hello World-Mkdocs](hello-world-Mkdocs)
+* [Hello World!](HelloWorld/hello-world.md)
+* [Hello World!-Hexo](HelloWorld/hello-world-Hexo.md)
+* [Hello World!-Mkdocs](HelloWorld/hello-world-Mkdocs.md)
 </div>

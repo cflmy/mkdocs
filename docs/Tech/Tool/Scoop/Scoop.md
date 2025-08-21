@@ -9,6 +9,8 @@ tag:
   - Scoop
   - Powser Shell
 date: 2024-11-13 10:42:33
+comments: true
+template: main.html
 ---
 
 ## 简介
@@ -35,7 +37,7 @@ irm get.scoop.sh -outfile 'install.ps1'
 # .\install.ps1 -ScoopDir 'C:\Scoop' -ScoopGlobalDir 'C:\Program Files' -NoProxy
 ~~~
 执行上述命令得到的结果如下：
-![](../img/Scoop/安装Scoop/1.png)
+![](img/1.webp)
 
 >
 小提示：事实上仔细观察上述截图你会发现安装时并非在根目录下完成的，我个人也建议你修改当前的目录，比如像我一样，新建一个Environment的文件夹。
@@ -58,7 +60,7 @@ irm scoop.201704.xyz -outfile 'install.ps1'
 scoop update
 ~~~
 正常情况下，会自动更新，但是有时也会出现：
-![](../img/Scoop/更新Scoop/1.png)
+![](img/2.webp)
 出现上述报错的原因是Scoop需要借助git管理系统来进行更新，在这样的情况下，很简单只需要按照提示输入：
 ~~~ps
 scoop install git 
@@ -67,14 +69,14 @@ Scoop就会自动安装git。
 接下来执行`scoop update`即可。
 但是事情有时不会像我们想的那么简单，比如说如果你和我一样将会遇到：
 
-![](../img/Scoop/更新Scoop/2.png)
+![](img/3.webp)
 出现这样的报错时，大多数情况下是因为你的网速不够高，或者无法正常的连接到github，很多时候你可以重试几次来完成，但是如果你不想这么做，可以尝试连接国内的镜像源，执行如下命令即可：
 ~~~ps
 scoop config SCOOP_REPO 'https://gitee.com/glsnames/scoop-installer'
 scoop update
 ~~~
 但上述命令依然可能失败，而且国内的镜像源有时并不是那么靠谱，或者更新没有那么快，在这样的情况下，为了应对你糟糕的网速，可以尝试使用加速器，需要注意的是github本身在国内是允许访问的，因此在这里使用加速访问github的页面理论上说并不违反法律规定。但总而言之，配置环境有时确实不是那么的简单，如果遭遇了许多挫折，请不要灰心，多尝试几次，最终会得到不错的结果。以下就是我在切换国内的镜像源依然失败之后，多次尝试终于成功的结果：
-![](../img/Scoop/更新Scoop/3.png)
+![](img/4.webp)
 ## Scoop使用
 ### bucket
 #### 查询bucket
@@ -83,7 +85,7 @@ scoop update
 scoop bucket known
 ~~~
 你可能会得到如下结果：
-![](../img/Scoop/Scoop-bucket/1.png)
+![](img/5.webp)
 
 #### 添加bucket
 一般而言`main`是自动拥有的，如果需要添加bucket，可以执行如下命令：
@@ -109,7 +111,7 @@ scoop bucket rm <bucket name>
 scoop install <库名/软件名>
 ~~~
 在大多数情况下库名是可以省略的，例如在scoop安装aria2(一个用于加速Scoop下载的程序，推荐下载)和gcc(c语言环境)：
-![](../img/Scoop/Scoop安装/1.png)
+![](img/6.webp)
 #### Scoop删除
 ~~~ps
 scoop uninstall <软件名>
@@ -133,13 +135,13 @@ scoop reset <软件名@版本号>
 scoop install sudo
 ~~~
 之所以说它奇怪，是因为你或许能够发现，当你可以在Windows中下载这东西的时候，似乎可以继续添加让它变成一个类Linux的系统了，但是我选择了停止进一步的探索，下载sudo单纯是因为scoop下载某些软件需要管理员权限，只需要在命令前添加sudo即可。
-![](../img/Scoop/安装sudo/1.png)
+![](img/7.webp)
 ### 添加easy-win
 就像我之前提到的，很多时候使用Scoop由于网速问题会出现很多问题，因此可以尝试使用easy-win来进行规避。
 ~~~ps
 scoop bucket add easy-win https://gitee.com/easy-win/scoop-mirror
 ~~~
-![](../img/Scoop/easy-win/1.png)
+![](img/8.webp)
 ### 安装Latex
 安装latex其实有很多种方式，可以选择直接下载一个十几G的texlive，我曾经尝试这么做，但是太过占据磁盘空间，Scoop提供了一个不错的安装latex的方式。
 ~~~ps
@@ -154,13 +156,13 @@ scoop install latex
 使用国内的镜像在很多时候可以规避大多数问题（尽管有时也不是那么好用，总之如果你可以直接下载完成就没必要更换，但是如果不行，那就尝试一下国内镜像，或许会有惊喜。），这里有一个记录了国内大多数镜像的链接：[Gitee的Scoop国内镜像](https://gitee.com/scoop-installer#:~:text=scoop%E5%9B%BD%E5%86%85%E9%95%9C%E5%83%8F%E4%BC%98)
             
 添加Scoopet:
-![](../img/Scoop/安装latex/1.png)
+![](img/9.webp)
 
 texlive下载完成：
-![](../img/Scoop/安装latex/2.png)
+![](img/10.webp)
 
 下载MikTex:
-![](../img/Scoop/安装latex/3.png)
+![](img/11.webp)
 
 ### 安装Java环境
 在该部分，将会出现一个很有意思的东西，如何使用Scoop进行版本控制。
@@ -172,21 +174,21 @@ scoop install oraclejdk
 #scoop install openjdk10
 ~~~
 安装过程：
-![](../img/Scoop/安装java/1.png)
-![](../img/Scoop/安装java/2.png)
+![](img/12.webp)
+![](img/13.webp)
 
 但是，之所以要特别提出java是因为一个Scoop在我看来非常有用的功能，切换不同版本的环境，该命令如下：
 ~~~ps
 scoop reset <软件名@版本号>
 ~~~
 可以用于切换不同的环境：
-![](../img/Scoop/安装java/3.png)
+![](img/14.webp)
 ### 安装puml
 之所以将这个软件单独提出来是因为这是一个非常好的代码制图软件，尤其是在大二数据结构课程中，某些老师的某些作业可能会用到。同时在这里会有一个Scoop的新命令出现，这个命令适用于搜索你不知道是否存在的软件：
 ~~~ps
 scoop search <软件名>
 ~~~
 搜索plantuml并下载：
-![](../img/Scoop/安装plantuml/1.png)
+![](img/15.webp)
 ### 其他
 如果需要C语言环境，已经在前文中下载gcc时完成了。其他需要配置的环境基本就是上面的流程，因此基本不再赘述。后续或许会有补充以及更新。

@@ -7,6 +7,8 @@ tag:
   - Typst
   - 知识记录
 date: 2025-05-12 14:30:00
+comments: true
+template: main.html
 ---
 ## 前言
 文档生成的工具有很多，之前作者就写过很多篇，包括[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdown/Markdown/)
@@ -135,8 +137,3 @@ Typst标记语言还有一项非常特殊的能力，速记，也就是使用一
 ## 后记
 今天主要介绍了Typst的标记部分语言，但是Typst的强大之处并不在标记部分，其强大的脚本语言提供了近乎无限的可能性，在后续部分会增加对Typst的脚本部分的介绍的。
 
----
-### 同系列：
-[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdown/Markdown/)
-[Latex基础语法](https://blog.cflmy.cn/2025/05/08/Technology/Latex/Latex/)
-[Typst-基础使用](https://blog.cflmy.cn/2025/05/12/Technology/Typst/Typst-基础使用/)

@@ -10,6 +10,8 @@ categories:
   - Technology
   - PlantUml
 date: 2024-11-15 10:52:48
+comments: true
+template: main.html
 ---
 ## 前言
 PlantUml是一种可以快速画出图像的语言。由于其使用脚本语言进行图像的生成，使得该语言非常便于维护。
@@ -23,7 +25,7 @@ PlantUml是一种可以快速画出图像的语言。由于其使用脚本语言
 ## 使用方式
 ### Hello World!
 尽管一个画图软件使用Hello World!看起来非常的奇怪而且怪异，但是为了某种统一的形式，这里还是将Hello World!作为介绍的起始。
-~~~
+~~~plantuml
 @startuml
 start
 :Hello World!;
@@ -42,7 +44,7 @@ stop
 ### Comment
 就像写程序一样，我们也可以在PlantUml中插入注释。
 在PlantUml中写注释的文本需要使用[克里奥尔维基语法](https://plantuml.com/zh/creole)。这里不具体列出该语法的具体内容，仅介绍如何在活动图中插入注释，注释可以进行形式等的修改，但是出于注释的本意是为了增加代码的可读性的考虑，在图表中的注释是否需要如此复杂，暂时还在考虑中，暂时不在此篇过多赘述。
-~~~
+~~~plantuml
 @startuml
 start
 :Print Hello World!;
@@ -53,7 +55,7 @@ stop
 @enduml
 ~~~
 显示效果
-```plantuml
+```puml
 @startuml
 start
 :Print Hello World!;
@@ -113,7 +115,7 @@ stop
 @enduml
 ~~~
 展现出来的效果如下：
-```plantuml
+```puml
 @startuml
 start
 :start;
@@ -144,7 +146,7 @@ stop
 @enduml
 ~~~
 展示的效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 if (condition?) then (True)
@@ -168,7 +170,7 @@ stop
 @enduml
 ~~~
 展示的效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 if (condition?) is (True) then
@@ -192,7 +194,7 @@ stop
 @enduml
 ~~~
 展示的效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 if (condition value) equals (True) then
@@ -224,7 +226,7 @@ stop
 @enduml
 ~~~
 显示效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 if (condition1) then (True)
@@ -264,7 +266,7 @@ stop
 @enduml
 ~~~
 显示效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 !pragma useVerticalIf on
@@ -299,7 +301,7 @@ stop
 @enduml
 ~~~
 显示效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 switch (condition)
@@ -326,7 +328,7 @@ stop
 @enduml
 ~~~
 显示的效果如下：
-```plantuml
+```puml
 @startuml
 start
 while (condition?)
@@ -346,7 +348,7 @@ end
 @enduml
 ~~~
 展示效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 while (condition value) is (True)
@@ -368,7 +370,7 @@ end
 @enduml
 ~~~
 展示的效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 repeat
@@ -389,7 +391,7 @@ stop
 @enduml
 ~~~
 展示效果如下所示：
-```plantuml
+```puml
 @startuml
 start
 repeat :BeginPlace;
@@ -402,8 +404,3 @@ stop
 
 ## 后记
 到此为止，一个程序基本需要使用的三种语句已经完成了，当然PlantUml还有其他的更高级好用的语句，以及使用方式，后续会继续更新的。
-
----
-### 同系列
-[PlantUml-活动图基础](https://blog.cflmy.cn/2024/11/15/Technology/PlantUml/PlantUml-%E6%B4%BB%E5%8A%A8%E5%9B%BE-%E5%9F%BA%E7%A1%80/)
-[PlantUml-思维导图基础](https://blog.cflmy.cn/2024/11/18/Technology/PlantUml/PlantUml-%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E5%9F%BA%E7%A1%80/)

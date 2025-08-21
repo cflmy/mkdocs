@@ -7,6 +7,8 @@ tag:
   - Latex
   - 知识记录
 date: 2025-05-08 15:50:00
+comments: true
+template: main.html
 ---
 ## 前言
 之前作者就写过一篇关于[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdown/Markdown/)的记录，Latex作为另一种排版工具自然也不能落下。
@@ -252,9 +254,3 @@ $$
 ## 后记
 Latex的基本操作就是这样了，当然Latex的许多操作还是非常深奥的，所以还是作者的一贯看法——
 找个模板，修改为自己的内容就可以了。
-
----
-### 同系列：
-[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdown/Markdown/)
-[Latex基础语法](https://blog.cflmy.cn/2025/05/08/Technology/Latex/Latex/)
-[Typst-基础使用](https://blog.cflmy.cn/2025/05/12/Technology/Typst/Typst-基础使用/)
