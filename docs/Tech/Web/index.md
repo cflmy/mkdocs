@@ -10,4 +10,5 @@ template: main.html
 * [Nginx配置和使用](Nginx/Nginx.md)
 * [Webdav挂载实现](Webdav/Windows.md)
 * [Alist云盘管理工具的配置](Alist/Alist-install.md)
+* [wordpress安装配置](WordPress/WordPress.md)
 </div>
