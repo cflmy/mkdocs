@@ -1,5 +1,5 @@
 ---
-date: 2025-08-20 18:22:00
+date: 2022-02-24 18:22:00
 author: Wang Jiaxiang
 title: CFLMY-Mkdocs
 comments: true
@@ -15,17 +15,13 @@ template: main.html
 ## 本站镜像
 <div class="grid cards" markdown>
 * [国内低带宽站点](http://mkdcos.cflmy.cn)
-* [github站点](https://mkdocs.cflmy.top)
-* [github站点原链接](https://cflmy.github.io/mkdocs)
-* [原Hexo博客(已弃用)](https://blog.cflmy.cn)
+* [mkdocs博客(唯一定期更新的博客)](https://mkdocs.cflmy.top)
+* [Hexo博客(更新不定期)](https://hexo.cflmy.top)
 </div>
 
 ## 站外索引
 <div class="grid cards" markdown>
-* [创明笔记](https://www.cflmy.com)
-* [个人主页](https://www.cflmy.cn)
-* [个人云盘](https://alist.cflmy.cn)
-* [WebPPT](https://ppt.cflmy.cn)
+* [导航页](https://www.cflmy.top)
 </div>
 
 ## 后记
