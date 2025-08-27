@@ -32,7 +32,7 @@ sudo systemctl enable nginx
 
 5. 检测nginx运行状态
 ```shell
-sudo systemctl enable nginx
+sudo systemctl status nginx
 ```
 
 接下来，只需要打开`本地IP:80`即可查看到nginx的欢迎页面。
