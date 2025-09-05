@@ -16,7 +16,7 @@ ssl证书是建立一个网站的必备一环，不然在浏览器访问你的�
 ## 安装
 ```shell
 sudo apt update
-sudp apt install certbot
+sudo apt install certbot
 ```
 
 ## 使用certbot自动配置证书
