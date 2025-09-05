@@ -55,5 +55,117 @@ nginx -t
 该命令会检测配置文件是否正确，并输出配置文件的路径信息。
 因此该命令可以在进行端口转发、ssl证书加密等配置之后检测配置是否正确。
 
+在初次打开nginx的配置文件时，nginx会有一个初始的配置信息：
+```conf
+user www-data;
+worker_processes auto;
+pid /run/nginx.pid;
+include /etc/nginx/modules-enabled/*.conf;
+
+events {
+	worker_connections 768;
+	# multi_accept on;
+}
+
+http {
+
+	##
+	# Basic Settings
+	##
+
+	sendfile on;
+	tcp_nopush on;
+	types_hash_max_size 2048;
+	# server_tokens off;
+
+	# server_names_hash_bucket_size 64;
+	# server_name_in_redirect off;
+
+	include /etc/nginx/mime.types;
+	default_type application/octet-stream;
+
+	##
+	# SSL Settings
+	##
+
+	ssl_protocols TLSv1 TLSv1.1 TLSv1.2 TLSv1.3; # Dropping SSLv3, ref: POODLE
+	ssl_prefer_server_ciphers on;
+
+	##
+	# Logging Settings
+	##
+
+	access_log /var/log/nginx/access.log;
+	error_log /var/log/nginx/error.log;
+
+	##
+	# Gzip Settings
+	##
+
+	gzip on;
+
+	# gzip_vary on;
+	# gzip_proxied any;
+	# gzip_comp_level 6;
+	# gzip_buffers 16 8k;
+	# gzip_http_version 1.1;
+	# gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript;
+
+	##
+	# Virtual Host Configs
+	##
+
+	include /etc/nginx/conf.d/*.conf;
+	include /etc/nginx/sites-enabled/*;
+}
+
+
+#mail {
+#	# See sample authentication script at:
+#	# http://wiki.nginx.org/ImapAuthenticateWithApachePhpScript
+#
+#	# auth_http localhost/auth.php;
+#	# pop3_capabilities "TOP" "USER";
+#	# imap_capabilities "IMAP4rev1" "UIDPLUS";
+#
+#	server {
+#		listen     localhost:110;
+#		protocol   pop3;
+#		proxy      on;
+#	}
+#
+#	server {
+#		listen     localhost:143;
+#		protocol   imap;
+#		proxy      on;
+#	}
+#}
+
+```
+
+这个配置信息在不同的版本有不同的内容，但大致上的功能是一致的，通过修改这里的内容就可以完成一些更多的操作。
+
+### 设置端口转发
+在观察配置信息之后，我们会发现中间有一行为`include /etc/nginx/sites-enabled/*;`
+打开观察后下面应该有一个default的文件，其中存放着配置信息，因此我个人推荐在该文件夹下创建配置文件从而避免污染原有的内容。
+例如你可以在`/etc/nginx/sites-enabled/`创建一个名为`testconfig`的文件
+输入下面的内容:
+```
+server {
+    listen 80;  # 监听 80 端口 (HTTP)
+    server_name testconfig.example.com;  # 你的域名或服务器的 IP 地址（可选）
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;  # 将请求转发到本地 8080 端口
+        proxy_set_header Host $host;  # 转发原始 Host 头部
+        proxy_set_header X-Real-IP $remote_addr;  # 转发客户端真实 IP
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for; # 转发客户端 IP (包括代理IP)
+        proxy_set_header X-Forwarded-Proto $scheme;  # 转发协议 (http 或 https)
+    }
+}
+```
+
+这样你就可以完成一个端口转发任务。
+
 ## 后记
-本来还想继续写nginx配置文件该如何进行配置的，但是发现好像配置的任务似乎比较多，决定在日后写一个单独的文件进行配置。
+nginx的作用还是很大的，读者可以自行尝试其他如负载均衡之类的配置。
