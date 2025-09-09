@@ -41,7 +41,7 @@ template: main.html
 
 ### 配置conda环境（可选）
 conda是管理python环境的工具，推荐下载。
-安装conda有许多方式，这里延续了之前使用scoop的方式（详情可见[Scoop环境配置记录](https://blog.cflmy.cn/2024/11/13/Technology/Scoop/Scoop/) ）
+安装conda有许多方式，这里延续了之前使用scoop的方式（详情可见[Scoop环境配置记录](../../Tool/Scoop/Scoop.md) ）
 在命令行输入
 ```ps
 scoop install anaconda3

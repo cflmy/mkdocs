@@ -11,10 +11,10 @@ comments: true
 template: main.html
 ---
 ## 前言
-之前作者就写过一篇关于[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdown/Markdown/)的记录，Latex作为另一种排版工具自然也不能落下。
+之前作者就写过一篇关于[Markdown基础语法](../Markdown/Markdown.md)的记录，Latex作为另一种排版工具自然也不能落下。
 
 本文主要记录Latex的基础语法，但是Latex的下载安装还是相对具有一定的挑战的，读者可查阅本博客的：
-[Scoop环境配置记录](https://blog.cflmy.cn/2024/11/13/Technology/Scoop/Scoop/)
+[Scoop环境配置记录](../../Tool/Scoop/Scoop.md)
 
 其中有提到如何配置Latex的内容，此外读者还可尝试自行配置TextLive，这里不再赘述。
 

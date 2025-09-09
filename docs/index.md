@@ -12,17 +12,8 @@ template: main.html
 * [技术分享](mkdocs\docs\Tech\Code\C\C.md)
 </div>
 
-## 本站镜像
-<div class="grid cards" markdown>
-* [国内低带宽站点](http://mkdcos.cflmy.cn)
-* [mkdocs博客(唯一定期更新的博客)](https://mkdocs.cflmy.top)
-* [Hexo博客(更新不定期)](https://hexo.cflmy.top)
-</div>
-
-## 站外索引
-<div class="grid cards" markdown>
-* [导航页](https://www.cflmy.top)
-</div>
+此外作者部署的其他站点可见：
+[导航站点](https://guide.cflmy.cn)
 
 ## 后记
 做什么事情的时候都留一份文档，以后做起来会方便许多，一直一来作者都抱着这种心态来进行这一些简单的记录。

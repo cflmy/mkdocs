@@ -39,10 +39,10 @@ sudo dnf install make
 scoop install make
 ```
 其中scoop配置教程见本博客：
-[Scoop环境配置记录](https://blog.cflmy.cn/2024/11/13/Technology/Scoop/Scoop/)
+[Scoop环境配置记录](../Scoop/Scoop.md)
 
 或者可以直接通过安装MinGW64完成，具体的步骤见（这里的步骤保持不变即可）：
-[C语言环境配置（最直接）](https://blog.cflmy.cn/2025/04/11/Technology/C/C_Environment/)
+[C语言环境配置（最直接）](../Scoop/Scoop.md)
 
 安装完成后，输入：
 ```ps

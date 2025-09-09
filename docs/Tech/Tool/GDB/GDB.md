@@ -39,10 +39,10 @@ sudo dnf install gdb
 ```ps
 scoop install gdb
 ```
-scoop的配置教程见：[Scoop环境配置记录](https://blog.cflmy.cn/2024/11/13/Technology/Scoop/Scoop/)
+scoop的配置教程见：[Scoop环境配置记录](../Scoop/Scoop.md)
 
 当然如果不想通过Scoop安装也是可以的，可以通过MinGW64进行下载安装，这里可以参考之前的C语言环境配置的教程，步骤几乎完全一样：
-[C语言环境配置（最直接）](https://blog.cflmy.cn/2025/04/11/Technology/C/C_Environment/)
+[C语言环境配置（最直接）](../../Code/C/C.md)
 
 ## 使用
 GDB主要是通过命令行进行调试的，可以对C、C++、Go、java、php等多种语言进行调试。使用GDB的上手难度相对比较高，不过没有关系，慢慢尝试即可。

@@ -14,7 +14,7 @@ template: main.html
 ---
 ## 前言
 在最近，作者的朋友像作者询问如何配置C语言环境，对于环境配置，尤其是Windows下的环境配置，作者之前已经写过一个有关的环境配置教程：
-[Scoop环境配置记录](https://blog.cflmy.cn/2024/11/13/Technology/Scoop/Scoop/)
+[Scoop环境配置记录](../../Tool/Scoop/Scoop.md)
 
 利用Scoop可以方便的配置C语言的环境，但是作者的朋友表示，只想配置一个C语言的环境，并不想在配置其他的东西。
 
@@ -44,9 +44,7 @@ template: main.html
 选择自己系统对应的版本即可。
 
 当然Github的官方网站可能不是那么好进入的，作者提前下载了一个版本，为Windows环境下64位版本的：
-[MinGW64-14.2.0-作者分享版本](https://alist.cflmy.cn/)
-
-文件存储在C文件夹下。
+[MinGW64-14.2.0-作者分享版本](https://openlist.cflmy.cn/sd/iv5f06Iw/Guest/C/x86_64-14.2.0-release-win32-seh-msvcrt-rt_v12-rev2.7z)
 
 ### 添加环境变量
 在作者还是萌新的时候，其实挺不理解为什么非要添加环境变量的，现在重新回顾这里，作者可以简单的做一个粗浅的解释。

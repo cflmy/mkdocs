@@ -20,7 +20,7 @@ PlantUml是一种可以快速画出图像的语言。由于其使用脚本语言
 ### 在线版（免安装调试）
 点击左边链接即可免费在线使用：[PlantUml Web Server](https://www.plantuml.com/plantuml/)
 ### 本地版
-可以使用本博客前文配置的Scoop：[Scoop环境配置记录](https://blog.cflmy.cn/2024/11/13/Technology/Scoop/)进行相关配置，比较方便快捷，其他配置方式不在赘述，有兴趣的朋友可以自行进行配置。
+可以使用本博客前文配置的Scoop：[Scoop环境配置记录](../Scoop/Scoop.md)进行相关配置，比较方便快捷，其他配置方式不在赘述，有兴趣的朋友可以自行进行配置。
 
 ## 使用方式
 ### Hello World!

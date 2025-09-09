@@ -11,8 +11,8 @@ comments: true
 template: main.html
 ---
 ## 前言
-文档生成的工具有很多，之前作者就写过很多篇，包括[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdown/Markdown/)
-和[Latex基础语法](https://blog.cflmy.cn/2025/05/08/Technology/Latex/Latex/),而与这两者不同Typst出现的非常的晚，2023年5月才由Martin Haug
+文档生成的工具有很多，之前作者就写过很多篇，包括[Markdown基础语法](../Markdown/Markdown.md)
+和[Latex基础语法](../Latex/Latex.md),而与这两者不同Typst出现的非常的晚，2023年5月才由Martin Haug
 Laurenz Mädje开发完成并上线。
 
 正是由于Typst非常新，因此具有非常多的有别于Latex和Markdown的新特性，让人在写作的时候有种非常新奇的体验，但也正是因为Typst非常新，

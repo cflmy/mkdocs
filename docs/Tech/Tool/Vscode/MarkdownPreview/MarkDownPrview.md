@@ -14,7 +14,7 @@ template: main.html
 ## 前言
 Vscode中有许多非常好用的插件，能够提升程序员的写作效率。其中Markdown prview enhanced作为一款markdown写作的预览插件，还是非常的有必要的。该软件可以实现自定义markdown的样式，今天分享一下配置技巧。
 
-[Markdown基础语法](https://blog.cflmy.cn/2025/03/19/Technology/Markdwon/Markdown/)
+[Markdown基础语法](../../../Doc/Markdown/Markdown.md)
 
 ## 下载安装
 Vscode搜索Markdown Preview Enhanced，安装下载即可。
