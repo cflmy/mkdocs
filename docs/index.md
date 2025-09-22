@@ -7,9 +7,10 @@ template: main.html
 ---
 ## 博客索引
 <div class="grid cards" markdown>
-* [HelloWorld](mkdocs\docs\HelloWorld\HelloWorld\hello-world.md)
-* [项目文档](mkdocs\docs\CFLMY\PPT\PPT001.md)
-* [技术分享](mkdocs\docs\Tech\Code\C\C.md)
+* [HelloWorld](HelloWorld/HelloWorld/hello-world.md)
+* [项目文档](CFLMY/PPT/PPT001.md)
+* [技术分享](Tech/Code/C/C.md)
+* [辩论经验](Debate/sjh.md)
 </div>
 
 此外作者部署的其他站点可见：
