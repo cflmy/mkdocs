@@ -165,6 +165,13 @@ server {
 }
 ```
 
+如果要让端口转发支持Websocket则需要在location这个位置添加配置如下:
+```
+		proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection "upgrade";
+```
+
 这样你就可以完成一个端口转发任务。
 
 ## 后记
