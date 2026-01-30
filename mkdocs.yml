@@ -2,8 +2,8 @@ site_name: CFLMY
 theme:
     name: material
     custom_dir: custom
-    logo: "https://openlist.cflmy.cn/sd/iv5f06Iw/Web/logo/logo-rb.webp"
-    favicon: "https://openlist.cflmy.cn/sd/iv5f06Iw/Web/logo/logo.ico"
+    logo: "https://s3.cflmy.cn/logo/Logo-write.png"
+    favicon: "https://s3.cflmy.cn/logo/Logo.png"
     language: "zh"
     features:
         - navigation.instant
